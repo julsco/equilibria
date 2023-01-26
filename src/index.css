@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+:root {
+    --green: #0E5474;
+    --red: #6D405C;
+    --pink: #BAA6B1;
+    --pink-light: #e4dadf;
+    --grey: #9BAEBC;
+}
+
+.text__green{
+    color: var(--green);
+}
+
+.text__red{
+    color: var(--red);
+}
+
+.text__pink{
+    color: var(--pink);
+}
+
+.text__grey{
+    color: var(--grey);
+}
+
+.bg__red{
+    background-color: var(--red);
+}
+
+.bg__green{
+    background-color: var(--green);
+}
