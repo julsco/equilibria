@@ -1,10 +1,13 @@
 .about__section {
     height: 85vh;
+    
 }
 
-/* .trial{
-    position: absolute;
-    left: 50%;
-    top: 0;
-    transform: translate(-50%, 0);
-} */
+@media only screen and (min-width: 1024px) {
+    .about__section {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-image: url("/src/assets/about.png");
+    }
+  }

@@ -1,41 +1,41 @@
-import React, { forwardRef } from "react";
+import React, { forwardRef, useContext } from "react";
 import "./about.css";
 import doctor from "../../assets/doctor.jpg";
 import { HiArrowLongDown } from "react-icons/hi2";
+import { WindowWidthContext } from "../../App";
+
 
 function About(props, ref) {
 
+    const windowWidth = useContext(WindowWidthContext);
+
     return (
-        <div ref={ref} className="about__section flex flex-col gap-9 items-center justify-center pt-10 w-full bg-white">
-            
-            <div className="about__wrapper relative bg-transparent w-3/5 h-3/4">
 
-                <img className="h-auto w-96 absolute left-20 rounded-3xl" src={doctor} alt="doctor" />
-
-                <div className="inner__about h-full">
-                    <div className="title flex items-center justify-end pr-24 bg-transparent w-full h-2/6">
-                        <h1 className="text__red text-center font-bold relative text-5xl" >The Equilibra Project</h1>
-                    </div>
-                    <div className="text__about bg__green w-full h-4/6 rounded-3xl flex">
-                        <div className="empty__div w-1/2"></div>
-                        <div className="text__btn flex flex-col w-1/2 items-center justify-center gap-8">
-                            <div className="description__about text-white text-3xl text-left pr-6 leading-normal">
-                                Fernando Martin Riggi Bou is a Sports Therapist working in the Sport Industry as an Instructor, 
-                                Coach, Nutritionist, Personal Trainer, and Rehabilitation Therapist.
+        <div ref={ref} className="about__section overflow-hidden flex flex-col items-center justify-center w-full xl:px-32 bg-white pt-10">
+                
+                    <div className="h-7/8 flex flex-col md:flex-row items-center justify-center gap-6 md:px-10 lg:px-20">
+                        
+                        <img src={doctor} alt="fernando" className="w-52 md:w-auto md:h-96 rounded-xl shadow-slate-800 shadow-2xl" />
+                        
+                        <div className="flex flex-col gap-4 ">
+                            <h1 className="text__green font-bold text-2xl xl:text-3xl self-start pl-6" >The equilibria Project</h1>
+                            <div className="text__green text-base xl:text-xl px-6">
+                                Fernando Martin Riggi Bou is a Sports Therapist working in the Sport Industry as an Instructor, Chiropractor, Coach, Nutritionist, Personal Trainer, and Rehabilitation Therapist. After working in many sports clubs such as Spartans FC he decided to continue his professional career by working for his-self in parallel with his clients.
                             </div>
-                            <button className="btn__main bg__red text-center text-white rounded w-36 h-14 text-base" >Explore more</button>
+                            <div className="self-center md:self-start md:pl-6 md:pt-3">
+                                <button className="btn__main bg__red text-center text-white rounded w-32 h-10 text-base" >Explore more</button>
+                            </div>
                         </div>
                     </div>
-                </div>
+                    <div className="flex flex-col items-center h-1/8 pt-6 md:pt-20 xl:pt-36 lg:pt-12">
+                        <HiArrowLongDown onClick={props.scrollDown} className="text__green text-6xl cursor-pointer" />
+                        <div onClick={props.scrollDown} className="text__green h-16 font-bold cursor-pointer">Scroll down</div>
+                    </div>
+                
+        </div>  
 
-            </div>
-            <div className="flex flex-col items-center justify-center h-1/4">
-                <HiArrowLongDown onClick={props.scrollDown} className="text__green text-8xl cursor-pointer" />
-                <div onClick={props.scrollDown} className="text__green h-16 text-xl font-bold cursor-pointer">Scroll down</div>
-            </div>
             
             
-        </div>
     )
 }
 

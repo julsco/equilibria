@@ -1,3 +1,12 @@
 .contact__section {
     height: 85vh;
 }
+
+@media only screen and (min-width: 1024px) {
+    .contact__section {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-image: url("/src/assets/contact.png");
+    }
+  }

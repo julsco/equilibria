@@ -1,40 +1,38 @@
-import React, {useState, useEffect} from "react"
-import RingLoader  from "react-spinners/RingLoader";
-import Nav from "./components/Nav/Nav";
+import React, {useState, useEffect, createContext} from "react"
+import Landing from "./components/Landing";
+import { Routes, Route } from "react-router-dom";
 
+
+export const WindowWidthContext = createContext()
 
 export default function App() {
-  
-  const [loading, setLoading] = useState(false)
 
-  useEffect(()=>{
-    setLoading(true)
-    setTimeout( () => {
-      setLoading(false)
-    }, 1000)
-  },[])
+  ///////////////////----------------Create context window width --------- ////////////////////////
+
+
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+            
+  useEffect(() => {
+      const handleWindowResize = () => {
+      setWindowWidth(window.innerWidth);
+      };
+  
+      window.addEventListener('resize', handleWindowResize);
+  
+      return () => {
+      window.removeEventListener('resize', handleWindowResize);
+      };
+  },[]);
 
   return (
   
-  
-  <div className= { loading ? "flex justify-center items-center w-full h-screen" : ""}>
-  
-    {loading ? 
+    <WindowWidthContext.Provider value={windowWidth}>
     
-      <RingLoader 
-          color={"#d63a36"}
-          loading={loading}
-          size={100}
-          aria-label="Loading Spinner"
-          data-testid="loader"
-        />
-    
-    :
-      <>
-        <Nav />
-      </>
-
-    }
-  </div>
+      <Routes>
+        <Route path="/" element={<Landing />}/>
+      </Routes>
+      
+    </WindowWidthContext.Provider>
+ 
   )
 }

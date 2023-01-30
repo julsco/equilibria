@@ -14,7 +14,8 @@
     --green: #0E5474;
     --red: #6D405C;
     --pink: #BAA6B1;
-    --pink-light: #e4dadf;
+    /* --pink-light: #e4dadf; */
+    --pink-light: #e2e1e1;
     --grey: #9BAEBC;
 }
 
@@ -34,10 +35,18 @@
     color: var(--grey);
 }
 
+.bg__grey{
+    background-color: var(--grey);
+}
+
 .bg__red{
     background-color: var(--red);
 }
 
 .bg__green{
     background-color: var(--green);
+}
+
+.bg__pink-light{
+    background-color: var(--pink-light);
 }
