@@ -2,6 +2,10 @@
     height: 85vh;
 }
 
+.pricelist {
+    border: 2px solid var(--red);
+}
+
 @media only screen and (min-width: 1024px) {
     .services__section {
         background-size: cover;

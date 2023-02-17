@@ -5,6 +5,7 @@ import massage from "../../assets/massage.jpg";
 import chiropractic from "../../assets/chiropractic.jpg";
 import { HiArrowLongDown } from "react-icons/hi2";
 import { WindowWidthContext } from "../../App";
+import { Link } from "react-router-dom";
 
 function Services(props, ref) {
 
@@ -35,7 +36,7 @@ function Services(props, ref) {
                     </div>
 
                 }
-                <button className="btn__main bg__red text-center text-white rounded w-32 h-10 text-base" >Explore more</button>
+                <Link to="/services"><button className="btn__main bg__red text-center text-white rounded w-32 h-10 text-base" >Explore more</button></Link>
             </div>
             <div className="flex flex-col items-center justify-center">
                 <HiArrowLongDown onClick={props.scrollDown} className="text__green text-6xl cursor-pointer" />

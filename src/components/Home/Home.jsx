@@ -1,6 +1,7 @@
 import React, { forwardRef } from "react";
 import "./home.css";
 import { HiArrowLongDown } from "react-icons/hi2";
+import { Link } from "react-router-dom";
 
 function Home(props, ref) {
 
@@ -13,7 +14,7 @@ function Home(props, ref) {
             </h2>
             <h4 className="text__green text-xl md:text-2xl xl:text-4xl">Sport Industry | Coach | Therapist</h4>
             <div className="lg:pl-36 xl:pt-8 xl:pl-56">
-                <button className="btn__main bg__red text-center text-white rounded w-40 h-12 xl:w-56 xl:h-16 text-xl xl:text-2xl" >Contact us</button>
+            <Link to="/about"><button className="btn__main bg__red text-center text-white rounded w-40 h-12 xl:w-56 xl:h-16 text-xl xl:text-2xl" >Explore more</button></Link>
             </div>
             <div className="flex flex-col self-center items-center md:pt-0 lg:pr-28">
                 <HiArrowLongDown onClick={props.scrollDown} className="text__green text-6xl cursor-pointer" />

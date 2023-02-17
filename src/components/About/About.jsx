@@ -3,6 +3,7 @@ import "./about.css";
 import doctor from "../../assets/doctor.jpg";
 import { HiArrowLongDown } from "react-icons/hi2";
 import { WindowWidthContext } from "../../App";
+import { Link } from "react-router-dom";
 
 
 function About(props, ref) {
@@ -23,7 +24,7 @@ function About(props, ref) {
                                 Fernando Martin Riggi Bou is a Sports Therapist working in the Sport Industry as an Instructor, Chiropractor, Coach, Nutritionist, Personal Trainer, and Rehabilitation Therapist. After working in many sports clubs such as Spartans FC he decided to continue his professional career by working for his-self in parallel with his clients.
                             </div>
                             <div className="self-center md:self-start md:pl-6 md:pt-3">
-                                <button className="btn__main bg__red text-center text-white rounded w-32 h-10 text-base" >Explore more</button>
+                                <Link to="/about"><button className="btn__main bg__red text-center text-white rounded w-32 h-10 text-base" >Explore more</button></Link>
                             </div>
                         </div>
                     </div>

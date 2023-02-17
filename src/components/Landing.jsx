@@ -98,7 +98,7 @@ export default function Landing() {
             <>
                 
                 <div className="wrapper ">
-                    <Nav ref={navigator} isNavVisible = {isVisible}/>
+                    <Nav ref={navigator} showBg={true} isNavVisible = {isVisible}/>
 
                     <Home ref={home} scrollDown={() => scrollToSection(about)} />
                     

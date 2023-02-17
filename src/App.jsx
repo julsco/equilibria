@@ -1,7 +1,9 @@
 import React, {useState, useEffect, createContext} from "react"
-import Landing from "./components/Landing";
 import { Routes, Route } from "react-router-dom";
-
+import Landing from "./components/Landing";
+import MainAbout from "./components/About/MainAbout";
+import MainServices from "./components/Services/MainServices";
+import MainContact from "./components/Contact/MainContact";
 
 export const WindowWidthContext = createContext()
 
@@ -30,6 +32,9 @@ export default function App() {
     
       <Routes>
         <Route path="/" element={<Landing />}/>
+        <Route path="/about" element={<MainAbout />}/>
+        <Route path="/services" element={<MainServices />}/>
+        <Route path="/contact" element={<MainContact />}/>
       </Routes>
       
     </WindowWidthContext.Provider>
