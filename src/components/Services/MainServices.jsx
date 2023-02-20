@@ -77,33 +77,48 @@ export default function MainServices () {
     return (
         <>
             <Nav showBg={false}/>
-            <div className="flex flex-col py-5 gap-4">
-                <h1 className="text__green font-bold text-center text-3xl">Services</h1>
-                <p className="text-left px-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est sapiente, ab adipisci voluptates distinctio nam possimus ipsam saepe eaque non vitae temporibus ullam? Facilis in, nesciunt aspernatur incidunt possimus neque, sunt quo tempora quis at illo ipsum animi dolorem totam magnam reprehenderit maxime, modi velit perferendis nisi repellendus soluta accusamus?</p>
-                <ul className="flex flex-col gap-10 items-center justify-center px-10">
+            <div className="flex flex-col py-7 gap-12 justify-center items-center">
+                <h1 className="text__green font-bold text-center text-3xl lg:text-4xl">Services</h1>
+                <p className="text-center px-10 w-full lg:w-1/2 text-base lg:text-xl leading-7 lg:leading-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est sapiente, ab adipisci voluptates distinctio nam possimus ipsam saepe eaque non vitae temporibus ullam? Facilis in, nesciunt aspernatur incidunt possimus neque, sunt quo tempora quis at illo ipsum animi dolorem totam magnam reprehenderit maxime, modi velit perferendis nisi repellendus soluta accusamus?</p>
+            </div>
+
+
+                {/* SERVICES */}
+
+            <div className="flex flex-col py-7 justify-center items-center">
+                
+                <ul className="flex flex-row flex-wrap gap-12 justify-around px-10 ">
                     {myServices.map((service, i) => (
-                        <li key={i} className="flex flex-col gap-4">
-                            <h2 className="text__red font-bold text-xl">{service.name}</h2>
-                            <img src={service.img} alt="massage" className="w-auto h-56" />
-                            <p>{service.description}</p>
+                        <li key={i} className="flex flex-col gap-6 w-full lg:w-3/12">
+                            <h2 className="text__red font-bold text-xl lg:text-2xl">{service.name}</h2>
+                            <img src={service.img} alt="massage" className="h-auto w-96 rounded-xl shadow-slate-800 shadow-2xl" />
+                            <p className="text-base lg:text-xl pt-7">{service.description}</p>
 
                         </li>
                     ))}
                 </ul>
-                <h1 className="text__green font-bold text-center text-3xl">Price List</h1>
-                <div className="px-6">
-                    <table className="pricelist border-collapse border-solid" >
-                        <tbody>
-                            {myServices.map((service, i) => (
-                                <tr key={i} className="border-2">
-                                    <td>{service.name}</td>
-                                    <td><pre>{service.price}</pre></td>
-                                </tr>
-                            ))}
-                        </tbody>
-                    </table>
-                </div>
+
             </div>
+
+
+
+                {/* PRICE LIST */}
+                <div className="flex flex-col py-7 gap-12 justify-center items-center">           
+                    <h1 className="text__green font-bold text-center text-3xl lg:text-4xl pt-5">Price List</h1>
+                    <div className="px-6 py-5">
+                        <table className="border-collapse" >
+                            <tbody>
+                                {myServices.map((service, i) => (
+                                    <tr key={i} className={`${i%2 == 0 ? "bg__grey" : ""} pricelist`}>
+                                        <td className="flex py-4 pl-2">{service.name}</td>
+                                        <td className=""><pre><span>{service.price}</span></pre></td>
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            
             <Footer />
             
             
