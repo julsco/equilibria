@@ -2,15 +2,15 @@ import React from "react";
 import "./services.css";
 import Nav from "../Nav/Nav";
 import Footer from "../Footer/Footer";
-import SportMassage from "../../assets/sport-massage.jpg";
-import SwedishMassage from "../../assets/swedish-massage.jpg";
-import HotStone from "../../assets/hot-stone.jpg";
-import TokSen from "../../assets/tok-sen.jpg";
-import Acupuncture from "../../assets/acupuncture.jpg";
-import Electroacupuncture from "../../assets/electroacupuncture.jpg";
-import RehabMassage from "../../assets/rehab-massage.jpg";
-import Chiropractic from "../../assets/chiropractic-technic.jpg";
-import MultipleTechnic from "../../assets/multiple-technic.jpg";
+import SportMassage from "./../../assets/sport-massage.jpg";
+import SwedishMassage from "./../../assets/swedish-massage.jpg";
+import HotStone from "./../../assets/hot-stone.jpg";
+import TokSen from "./../../assets/tok-sen.jpg";
+import Acupuncture from "./../../assets/acupuncture.jpg";
+import Electroacupuncture from "./../../assets/electroacupuncture.jpg";
+import RehabMassage from "./../../assets/rehab-massage.jpg";
+import Chiropractic from "./../../assets/chiropractic-technic.jpg";
+import MultipleTechnic from "./../../assets/multiple-technic.jpg";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 
 
