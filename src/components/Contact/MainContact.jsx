@@ -11,15 +11,18 @@ export default function MainContact () {
     const contact = [
         {
             icon: AiOutlineMail,
-            title: "ligtyfer@gmail.com"
+            title: "ligtyfer@gmail.com",
+            ref: "mailto:ligtyfer@gmail.com"
         },
         {
             icon: BsWhatsapp,
-            title: "07417402418"
+            title: "07417402418",
+            ref: "https://wa.me/+447417402418"
         },
         {
             icon: FiMapPin,
-            title: "Muirhouse Grove\nEdinburgh\nEH4 4SS"
+            title: "Muirhouse Grove\nEdinburgh\nEH4 4SS",
+            ref: "https://goo.gl/maps/JYkwfqnq7YuZMTRD6"
         }
     ]
 
@@ -39,8 +42,8 @@ export default function MainContact () {
                 {contact.map((cont, i) => (
                         <div key={i} className="flex flex-col gap-3 items-center  w-36 lg:w-48 h-36 lg:h-48">
                         
-                            <div className="bg__red flex justify-center items-center rounded-full w-16 lg:w-24 h-16 lg:h-24 hover:opacity-80">
-                                <cont.icon className="text-white text-3xl lg:text-4xl "/>
+                            <div className="bg__red cursor-pointer flex justify-center items-center rounded-full w-16 lg:w-24 h-16 lg:h-24 hover:opacity-80">
+                                <a href={cont.ref} target="_blank"><cont.icon className="text-white text-3xl lg:text-4xl "/></a>
                             </div>
 
                             <pre><div className="text-base text-center">{cont.title}

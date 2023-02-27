@@ -4,6 +4,7 @@ import Landing from "./components/Landing";
 import MainAbout from "./components/About/MainAbout";
 import MainServices from "./components/Services/MainServices";
 import MainContact from "./components/Contact/MainContact";
+import ScrollToTop from "./components/ScrollToTop";
 
 export const WindowWidthContext = createContext()
 
@@ -25,6 +26,8 @@ export default function App() {
       window.removeEventListener('resize', handleWindowResize);
       };
   },[]);
+
+  
 
   return (
   

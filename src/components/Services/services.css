@@ -3,7 +3,11 @@
 }
 
 .pricelist {
-    border: 3px solid var(--red);
+    border: px solid var(--red);
+}
+
+.table__bg {
+    background-color: rgb(109, 64, 92, 0.2);
 }
 
 @media only screen and (min-width: 1024px) {

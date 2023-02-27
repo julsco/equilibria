@@ -7,9 +7,11 @@ import { HiArrowLongDown } from "react-icons/hi2";
 import { WindowWidthContext } from "../../App";
 import { Link } from "react-router-dom";
 
+
 function Services(props, ref) {
 
     const windowWidth = useContext(WindowWidthContext);
+
 
     return (
         <div ref={ref} className="services__section overflow-hidden w-full bg-white flex flex-col justify-center items-center gap-6 sm:gap-10 lg:gap-14 pt-6">
@@ -25,14 +27,14 @@ function Services(props, ref) {
                 {   ///////////////////----------------Slider if small screen --------- ////////////////////////
                     windowWidth >= 1280 ?
 
-                    <div className="services__imgs flex flex-wrap w-full px-8 xl:px-0 gap-10 justify-center items-center">
+                    <div className="flex flex-wrap w-full px-8 xl:px-0 gap-10 justify-center items-center">
                         <img className="w-96 h-64 rounded-3xl shadow-slate-800 shadow-2xl" src={massage} alt="Sports massage" />
                         <img className="w-96 h-64 rounded-3xl shadow-slate-800 shadow-2xl" src={acupuncture} alt="Acupunture" />
                         <img className="w-96 h-64 rounded-3xl shadow-slate-800 shadow-2xl" src={chiropractic} alt="Chiropractic technic" />
                     </div> :
 
-                    <div className="services__imgs flex flex-wrap w-full px-8 gap-10 justify-center items-center">
-                        <img className="w-96 h-64 rounded-3xl shadow-slate-800 shadow-2xl" src={massage} alt="Sports massage" />
+                    <div className="flex flex-wrap w-full px-8 gap-10 justify-center items-center">
+                        <img className="w-96 h-64 rounded-3xl shadow-slate-800 shadow-2xl" src={acupuncture} alt="Acupuncture" />
                     </div>
 
                 }

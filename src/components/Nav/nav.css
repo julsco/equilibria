@@ -24,3 +24,15 @@
     transform: scale(1.2);
 }
 
+.nav__links{
+    transition: opacity .25s ease-in-out;
+}
+
+.navbar:hover .nav__links {
+    opacity: 0.5;
+}
+
+.navbar:hover .nav__links:hover{
+    opacity: 1;
+}
+

@@ -12,6 +12,25 @@ function Nav(props, ref) {
     
     const windowWidth = useContext(WindowWidthContext);
 
+    const navLinks = [
+        {
+            name: "Home",
+            ref: "/"
+        },
+        {
+            name: "About",
+            ref: "/about"
+        },
+        {
+            name: "Services",
+            ref: "/services"
+        },
+        {
+            name: "Contact",
+            ref: "/contact"
+        },
+    ]
+
     return (
         <>  
             {props.showBg && <div className="gradient bg-white opacity-40 top-0 absolute w-full h-screen">
@@ -24,11 +43,12 @@ function Nav(props, ref) {
                     </a>
                 </div>
 
-                {windowWidth > 768 ? <ul className="flex gap-10 text-xl items-center ">
-                    <li className="cursor-pointer text-xl"><Link to="/">Home</Link> </li>
-                    <li className="cursor-pointer text-xl"><Link to="/about">About</Link></li>
-                    <li className="cursor-pointer text-xl"><Link to="/services">Services</Link></li>
-                    <li className="cursor-pointer text-xl"><Link to="/contact">Contact</Link></li>
+                {windowWidth > 768 ? 
+                
+                <ul className="navbar flex gap-10 text-xl items-center">
+                    {navLinks.map((link, i) => (
+                        <li key={i} className="nav__links cursor-pointer text-xl"><Link to={link.ref}>{link.name}</Link> </li>
+                    ))}
                 </ul> : <Burger />}
             </div>
         </>

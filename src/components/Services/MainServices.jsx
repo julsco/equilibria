@@ -2,15 +2,15 @@ import React from "react";
 import "./services.css";
 import Nav from "../Nav/Nav";
 import Footer from "../Footer/Footer";
-import SportMassage from "./../../assets/sport-massage.jpg";
-import SwedishMassage from "./../../assets/swedish-massage.jpg";
-import HotStone from "./../../assets/hot-stone.jpg";
-import TokSen from "./../../assets/tok-sen.jpg";
-import Acupuncture from "./../../assets/acupuncture.jpg";
-import Electroacupuncture from "./../../assets/electroacupuncture.jpg";
-import RehabMassage from "./../../assets/rehab-massage.jpg";
-import Chiropractic from "./../../assets/chiropractic-technic.jpg";
-import MultipleTechnic from "./../../assets/multiple-technic.jpg";
+import SportMassage from "../../assets/sport-massage.jpg";
+import SwedishMassage from "../../assets/swedish-massage.jpg";
+import HotStone from "../../assets/hot-stone.jpg";
+import TokSen from "../../assets/tok-sen.jpg";
+import Acupuncture from "../../assets/acupuncture.jpg";
+import Electroacupuncture from "../../assets/electroacupuncture.jpg";
+import RehabMassage from "../../assets/rehab-massage.jpg";
+import Chiropractic from "../../assets/chiropractic-technic.jpg";
+import MultipleTechnic from "../../assets/multiple-technic.jpg";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 
 
@@ -79,7 +79,9 @@ export default function MainServices () {
             <Nav showBg={false}/>
             <div className="flex flex-col py-7 gap-12 justify-center items-center">
                 <h1 className="text__green font-bold text-center text-3xl lg:text-4xl">Services</h1>
-                <p className="text-center px-10 w-full lg:w-1/2 text-base lg:text-xl leading-7 lg:leading-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est sapiente, ab adipisci voluptates distinctio nam possimus ipsam saepe eaque non vitae temporibus ullam? Facilis in, nesciunt aspernatur incidunt possimus neque, sunt quo tempora quis at illo ipsum animi dolorem totam magnam reprehenderit maxime, modi velit perferendis nisi repellendus soluta accusamus?</p>
+                <p className="text-center px-10 w-full lg:w-1/2 text-base lg:text-xl leading-7 lg:leading-8">
+                I help people affected by injury, illness or disability through movement and exercise, manual therapy, education and advice. I care for people of all ages, helping patients to manage pain and prevent disease. The services provided include techniques such as spinal adjustments, other manual therapies, exercise and lifestyle advice to restore, promote and preserve spinal and musculoskeletal function and health. 
+                </p>
             </div>
 
 
@@ -103,14 +105,15 @@ export default function MainServices () {
 
 
                 {/* PRICE LIST */}
+
                 <div className="flex flex-col py-7 gap-12 justify-center items-center">           
                     <h1 className="text__green font-bold text-center text-3xl lg:text-4xl pt-5">Price List</h1>
                     <div className="px-6 py-5">
                         <table className="border-collapse" >
                             <tbody>
                                 {myServices.map((service, i) => (
-                                    <tr key={i} className={`${i%2 == 0 ? "bg__grey" : ""} pricelist`}>
-                                        <td className="flex py-4 pl-2">{service.name}</td>
+                                    <tr key={i} className={`${i%2 == 0 ? "table__bg" : ""} pricelist`}>
+                                        <td className="flex py-4 pl-2 md:w-96">{service.name}</td>
                                         <td className=""><pre><span>{service.price}</span></pre></td>
                                     </tr>
                                 ))}

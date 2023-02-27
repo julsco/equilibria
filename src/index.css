@@ -50,3 +50,19 @@
 .bg__pink-light{
     background-color: var(--pink-light);
 }
+
+/* BURGER */
+
+body.active-modal {
+    overflow-y: hidden;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    transition: all 0.5s;
+}
+
+.burg {
+    transition: all .3s ease;
+}

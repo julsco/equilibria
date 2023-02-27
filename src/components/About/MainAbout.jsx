@@ -66,7 +66,7 @@ export default function MainAbout () {
                 <div className="flex flex-col gap-12 justify-center items-center py-12">
                 <h1 className="text__green text-3xl lg:text-4xl font-bold">Solutions</h1>
 
-                <div className="flex flex-row flex-wrap justify-around items-center gap-10 px-6 lg:px-32">
+                <div className="flex flex-row flex-wrap justify-around items-center gap-10 px-6 lg:px-32 xl:w-4/6">
 
                     {solutions.map((solution, i) => (
                         <div key={i} className="flex flex-col gap-3 items-center justify-center w-32 lg:w-40 h-32 lg:h-40">
@@ -81,7 +81,7 @@ export default function MainAbout () {
                         </div>
                             ))}
                     
-                    </div>
+                </div>
             </div>
             <Footer />
             
