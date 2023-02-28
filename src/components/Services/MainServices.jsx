@@ -90,14 +90,22 @@ export default function MainServices () {
             <div className="flex flex-col py-7 justify-center items-center">
                 
                 <ul className="flex flex-row flex-wrap gap-12 justify-around px-10 ">
-                    {myServices.map((service, i) => (
+                    {/* {myServices.map((service, i) => (
                         <li key={i} className="flex flex-col gap-6 w-full lg:w-3/12">
                             <h2 className="text__red font-bold text-xl lg:text-2xl">{service.name}</h2>
                             <img src={service.img} alt={service.name} className="h-auto w-96 rounded-xl shadow-slate-800 shadow-2xl" />
                             <p className="text-base lg:text-xl pt-7">{service.description}</p>
 
                         </li>
-                    ))}
+                    ))} */}
+
+                        <li className="flex flex-col gap-6 w-full lg:w-3/12">
+                            <h2 className="text__red font-bold text-xl lg:text-2xl">{"Massage"}</h2>
+                            <img src={sportMassage} alt={"qwdq"} className="h-auto w-96 rounded-xl shadow-slate-800 shadow-2xl" />
+                            <p className="text-base lg:text-xl pt-7">{"Descript"}</p>
+
+                        </li>
+
                 </ul>
 
             </div>
