@@ -12,7 +12,7 @@ function Home(props, ref) {
                 The harmony's root grows into the obtained results of the physical,
                 mental, and spiritual equilibrium.
             </h2>
-            <h4 className="text__green text-xl md:text-2xl xl:text-4xl">Sport Industry | Physiotherapist | Chiropractic</h4>
+            <h4 className="text__green self-center text-xl md:text-2xl xl:text-4xl">Physiotherapist | Chiropractic | Coach</h4>
             <div className="lg:pl-36 xl:pt-8 xl:pl-56">
             <Link to="/about"><button className="btn__main bg__red text-center text-white rounded w-40 h-12 xl:w-56 xl:h-16 text-xl xl:text-2xl" >Explore more</button></Link>
             </div>
