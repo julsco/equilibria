@@ -2,15 +2,15 @@ import React from "react";
 import "./services.css";
 import Nav from "../Nav/Nav";
 import Footer from "../Footer/Footer";
-import sportMassage from "../../assets/sport-massage.jpg";
-import swedishMassage from "../../assets/swedish-massage.jpg";
-import hotStone from "../../assets/hot-stone.jpg";
-import tokSen from "../../assets/tok-sen.jpg";
+import sportmassage from "../../assets/sport-massage.jpg";
+import swedishmassage from "../../assets/swedish-massage.jpg";
+import hotstone from "../../assets/hot-stone.jpg";
+import toksen from "../../assets/tok-sen.jpg";
 import acupuncture from "../../assets/acupuncture.jpg";
 import electroacupuncture from "../../assets/electroacupuncture.jpg";
-import rehabMassage from "../../assets/rehab-massage.jpg";
+import rehabmassage from "../../assets/rehab-massage.jpg";
 import chiropractic from "../../assets/chiropractic-technic.jpg";
-import multipleTechnic from "../../assets/multiple-technic.jpg";
+import multipletechnic from "../../assets/multiple-technic.jpg";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 
 
@@ -19,25 +19,25 @@ export default function MainServices () {
     const myServices = [
         {
             name: "Sports Massage",
-            img: sportMassage,
+            img: sportmassage,
             description: "Sports massage is proven to release and reduce tension in muscles, improve circulation and encourage the removal of waste products such as lactic acid during high intensity activity and can help to relax the body. All of this helps promote recovery and reduces the chance of muscle injury.",
             price: "1 hour: £45\n1 ½ hour: £65\n2 hours: £85"
         },
         {
             name: "Swedish Massage",
-            img: swedishMassage,
+            img: swedishmassage,
             description: "Swedish massage involves long, kneading strokes combined with rhythmic tapping strokes and movement of the joints. This type of massage targets the uppermost layer of muscles and aims to relieve muscle tension.",
             price: "½ hour: £30\n1 hour: £60"
         },
         {
             name: "Tok Sen Massage",
-            img: tokSen,
+            img: toksen,
             description: "Tok Sen massage is an ancient northern Thai practice that involves the use of a special wooden hammer , made from the bark of the tamarind tree, to relax muscles in a rhythmically tapping motion, 'Tok Sen'. Tok means to hammer or hit and sen refers to the pathways in the body.",
             price: "½ hour: £30"
         },
         {
             name: "Hot Stone Massage",
-            img: hotStone,
+            img: hotstone,
             description: "Studies show that a hot stone massage may be a helpful way to reduce stress and anxiety, promote relaxation, and ease pain and muscle tension. It may be helpful for a variety of conditions and circumstances.",
             price: "½ hour: £30\n1 hour: £60"
         },
@@ -55,7 +55,7 @@ export default function MainServices () {
         },
         {
             name: "Rehabilitation Massage",
-            img: rehabMassage,
+            img: rehabmassage,
             description: "Studies indicate that massage therapy has a variety of benefits for helping people recover from surgeries, including: Aiding in the re-alignment of muscles and joints, Helping regain full range of motion without discomfort, Reducing inflammation and scar tissue, along with others.",
             price: "1 hour: £45\n1 ½ hour: £65\n2 hours: £85"
         },
@@ -67,7 +67,7 @@ export default function MainServices () {
         },
         {
             name: "Multiple Techniques Treatment",
-            img: multipleTechnic,
+            img: multipletechnic,
             description: "This multiple technique treatment includes all necessary techniques into the sessions.",
             price: "1 hour: £60\n1 ½ hour: £80\n2 hours: £95"
         }
