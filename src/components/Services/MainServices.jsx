@@ -19,7 +19,7 @@ export default function MainServices () {
     const myServices = [
         {
             name: "Sports Massage",
-            img: sportMassage,
+            img: "../../assets/sport-massage.jpg",
             description: "Sports massage is proven to release and reduce tension in muscles, improve circulation and encourage the removal of waste products such as lactic acid during high intensity activity and can help to relax the body. All of this helps promote recovery and reduces the chance of muscle injury.",
             price: "1 hour: £45\n1 ½ hour: £65\n2 hours: £85"
         },
@@ -93,7 +93,7 @@ export default function MainServices () {
                     {myServices.map((service, i) => (
                         <li key={i} className="flex flex-col gap-6 w-full lg:w-3/12">
                             <h2 className="text__red font-bold text-xl lg:text-2xl">{service.name}</h2>
-                            <img src={service.img} alt="massage" className="h-auto w-96 rounded-xl shadow-slate-800 shadow-2xl" />
+                            <img src={service.img} alt={service.name} className="h-auto w-96 rounded-xl shadow-slate-800 shadow-2xl" />
                             <p className="text-base lg:text-xl pt-7">{service.description}</p>
 
                         </li>
